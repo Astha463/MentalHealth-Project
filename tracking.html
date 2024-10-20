@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tracking.css">
+    <title>Mood Tracker</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li id="HappyMind">HappyMind</li>
+                <li><a href="home.html">Home</a></li>
+               
+                <li><a href="aboutus.html">AboutUs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="journaling.html">Journaling</a></li>
+                <li><a href="tracking.html">Tracking</a></li>
+                <li><a href="login.html">LogOut</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Mood Tracker</h1>
+        <form id="journalForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <div>
+                <label for="mood">Mood:</label>
+                <label><input type="radio" name="mood" value="happy" checked>Happy</label>
+                <label><input type="radio" name="mood" value="sad">Sad</label>
+                <label><input type="radio" name="mood" value="calm">Calm</label>
+                <label><input type="radio" name="mood" value="anxious">Anxious</label>
+                <label><input type="radio" name="mood" value="energetic">Energetic</label>
+                <label><input type="radio" name="mood" value="stressed">Stressed</label>
+                <label><input type="radio" name="mood" value="confident">Confident</label>
+                <label><input type="radio" name="mood" value="frustated">Frustated</label>
+                <label><input type="radio" name="mood" value="motivated">Motivated</label>
+            </div>
+            <div>
+                <label for="entry">Notes: </label>
+                <textarea id="entry" rows="8" required></textarea>
+            </div>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <div id="tips">
+            <h2>Tips for Your Mood:</h2>
+            <ul id="moodTipsList"></ul>
+            <p id="moodTips">Tips will appear here based on your mood selection.</p>
+        </div>
+        <button onclick="displaySavedData()">Show History</button>
+        <div id="display-container"></div>
+    </div>
+
+    <script src="tracking.js"></script>
+</body>
+</html>

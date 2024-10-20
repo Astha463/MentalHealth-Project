@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(216, 232, 241);
+}
+
+header {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  max-width: 100px;
+  height: auto;
+}
+.HappyMind {
+  color: white;
+  padding-right: 500px;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+#login-section {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+#options-section {
+  text-align: center;
+}
+
+.option {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+.option-image {
+  border-radius: 50%;
+  max-width: 100px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.option p {
+  margin-top: 10px;
+}
+
+#tracking-section {
+  text-align: center;
+}
+
+#tracking-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#tracking-form label,
+#tracking-form select,
+#tracking-form textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#tracking-form button {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#tips-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #222;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar li a:hover {
+  background-color: #575757;
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+
+/* Medium screens - tablets */
+@media screen and (max-width: 1024px) {
+  .navbar ul {
+    flex-direction: row; /* Stack navbar items */
+}
+
+.navbar li {
+    float: none; /* Remove float for proper stacking */
+}
+
+.navbar li a {
+    padding: 18px; /* Adjust padding for medium screens */
+    font-size: 16px; /* Slightly reduce font size */
+}
+
+  #login-section, #tracking-form {
+    max-width: 90%; /* Wider container for medium screens */
+  }
+
+  button {
+    padding: 8px; /* Adjust button padding for medium screens */
+  }
+}
+
+/* Small screens - smartphones */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: row; /* Ensure horizontal layout */
+  }
+
+  #login-section, #tracking-form {
+    max-width: 90%; /* Use more screen width */
+  }
+}
+
+/* Extra small devices - smartphones */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  header img {
+    max-width: 70px; /* Slightly smaller image */
+  }
+
+  .navbar li a {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  button {
+    padding: 6px; /* Smaller button padding */
+  }
+
+  #login-section, #tracking-form {
+    max-width: 98%; /* Full-width container on mobile */
+  }
+}

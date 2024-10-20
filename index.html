@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Mentor</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li class="HappyMind">HappyMind</li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="journaling.html">Journaling</a></li>
+      <li><a href="tracking.html">Tracking</a></li>
+      <li><button id="logout-btn">Log Out</button></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="./images/logo.jpg" alt="Mood Mentor Logo">
+    <h1>Mood Mentor</h1>
+  </header>
+
+  <main>
+    <section id="login-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Log In</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(216, 232, 241);
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+#journaling-section {
+    margin: 150px;
+    text-align: center;
+}
+
+#journaling-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+
+#journaling-form label,
+#journaling-form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#journaling-form button {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#journaling-form button:nth-child(3) {
+    margin-bottom: 1rem;
+}
+
+#save {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#history {
+    width: 100%;
+}
+
+/* Navbar */
+.HappyMind {
+    color: white;
+    padding-right: 500px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    background-color: #222;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:flex-start; /* Align HappyMind and menu items on opposite ends */
+    align-items: center;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: #575757;
+    transform: scale(1.1);
+}
+
+#journal-entry{
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    #journaling-section {
+        margin: 120px 50px; /* Adjust margins for medium screens */
+    }
+
+    #journaling-form {
+        max-width: 80%; /* Adjust the width of the form */
+    }
+
+    .HappyMind {
+        font-size: 28px; /* Slightly reduce font size */
+        padding-right: 0px; /* Reduce padding */
+    }
+
+    .navbar ul {
+        flex-direction: row; /* Stack navbar items */
+    }
+
+    .navbar li {
+        float: none; /* Remove float for proper stacking */
+    }
+
+    .navbar li a {
+        padding: 18px; /* Adjust padding for medium screens */
+        font-size: 16px; /* Slightly reduce font size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #journaling-section {
+        margin: 100px 20px; /* Adjust margins for smaller screens */
+    }
+
+    #journaling-form {
+        max-width: 90%; /* Adjust the width of the form */
+    }
+
+    .HappyMind {
+        font-size: 24px; /* Reduce font size for smaller screens */
+        padding-right: 0;
+    }
+
+    .navbar ul {
+        flex-direction: row; /* Stack navbar items */
+    }
+
+    .navbar li {
+        float: none; /* Remove float for proper stacking */
+    }
+
+    .navbar li a {
+        padding: 15px; /* Adjust padding for smaller screens */
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px; /* Adjust padding on very small screens */
+    }
+
+    .HappyMind {
+        font-size: 20px; /* Further reduce font size */
+    }
+
+    .navbar ul {
+        flex-direction: row; /* Stack navbar vertically */
+    }
+
+    .navbar li a {
+        padding: 9px; /* Further reduce padding */
+        font-size: 11px;
+    }
+
+    #journaling-section {
+        margin: 50px 10px; /* Adjust for mobile */
+    }
+
+    #journaling-form {
+        max-width: 100%; /* Take full width on mobile */
+        padding: 15px; /* Reduce padding */
+    }
+
+    #journal-entry {
+        width: 100%;
+    }
+}
