@@ -239,7 +239,7 @@ body {
   }
 
   .carousel-slide {
-    min-width: 50%; /* Show 2 items per row on medium screens */
+    min-width: 50%; 
   }
 
   .prev, .next {
@@ -276,7 +276,7 @@ body {
   }
 
   .carousel-slide {
-    min-width: 100%; /* Show 1 item per row on small screens */
+    min-width: 100%; 
   }
 
   .prev, .next {

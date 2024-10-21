@@ -48,7 +48,8 @@ body {
 #HappyMind {
     color: white;
     font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 
+    Calibri, 'Trebuchet MS', sans-serif;
     padding-right: 500px;
 }
 
@@ -86,8 +87,6 @@ button:hover {
 h1, h2 {
     color: #101011;
 }
-
-/* Styling for radio input */
 label {
     display: inline-block;
     margin-right: 10px;
@@ -107,76 +106,76 @@ textarea {
 /* Responsive Styles for medium screens */
 @media screen and (max-width: 1024px) {
     #HappyMind {
-        font-size: 35px; /* Slightly reduce font size */
+        font-size: 35px; 
         padding: 0%;
     }
 
      .navbar ul {
-        flex-direction: row; /* Stack navbar items */
+        flex-direction: row; 
     }
 
     .navbar li {
-        float: none; /* Remove float for proper stacking */
+        float: none; 
     }
 
     .navbar li a {
-        padding: 15px; /* Adjust padding for medium screens */
-        font-size: 16px; /* Slightly reduce font size */
+        padding: 15px; 
+        font-size: 16px; 
     }
 
     .container {
-        max-width: 90%; /* Slightly wider container */
-        margin: 90px auto; /* Adjust margin */
+        max-width: 90%; 
+        margin: 90px auto;
     }
 
     form button {
-        width: 100%; /* Full-width buttons on medium screens */
+        width: 100%;
     }
 }
 
 /* Responsive Styles for small screens */
 @media screen and (max-width: 768px) {
     #HappyMind {
-        font-size: 28px; /* Reduce font size on smaller screens */
+        font-size: 28px; 
     }
 
     .navbar li a {
-        padding: 15px; /* Adjust padding for smaller screens */
+        padding: 15px; 
         font-size: 14px;
     }
 
     .container {
-        max-width: 90%; /* Use more of the screen width */
-        margin: 80px auto; /* Adjust margin for smaller screens */
+        max-width: 90%; 
+        margin: 80px auto; 
     }
 
     form button {
-        width: 100%; /* Full-width buttons on smaller screens */
+        width: 100%; 
     }
 }
 
 /* Responsive Styles for very small screens */
 @media screen and (max-width: 480px) {
     #HappyMind {
-        font-size: 19px; /* Further reduce font size for very small screens */
+        font-size: 19px; 
     }
 
     .navbar ul {
-        flex-direction: row; /* Stack navbar items vertically */
+        flex-direction: row; 
     }
 
     .navbar li a {
-        padding: 8px; /* Further reduce padding */
+        padding: 8px; 
         font-size: 11px;
     }
 
     .container {
-        max-width: 80%; /* Full-width container on mobile */
-        margin: 50px auto; /* Reduce margins for mobile */
-        padding: 10px; /* Reduce padding */
+        max-width: 80%; 
+        margin: 50px auto;
+        padding: 10px; 
     }
 
     form button {
-        width: 100%; /* Ensure full-width buttons */
+        width: 100%; 
     }
 }

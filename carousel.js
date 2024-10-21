@@ -1,25 +1,25 @@
 let currentIndex = 0;
 const slides = document.querySelectorAll('.carousel-slide');
 const totalSlides = slides.length;
-const visibleSlides = 4; // Show 4 slides at a time
+const visibleSlides = 4; 
 
 function moveSlide(n) {
   currentIndex += n;
 
   if (currentIndex > totalSlides - visibleSlides) {
-    currentIndex = 0; // Loop back to the first slide
+    currentIndex = 0; 
   } else if (currentIndex < 0) {
-    currentIndex = totalSlides - visibleSlides; // Loop back to the last set of slides
+    currentIndex = totalSlides - visibleSlides; 
   }
 
-  const offset = -currentIndex * (100 / visibleSlides); // Adjust to fit 4 images
+  const offset = -currentIndex * (100 / visibleSlides); 
   document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
 }
 
-// Auto Slide Feature (2 seconds)
+
 setInterval(() => {
   moveSlide(1);
-}, 2000); // Move every 2 seconds
+}, 2000); 
 
 // Manual Controls
 document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
