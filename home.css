@@ -5,50 +5,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.navbar {
-  background-color:#222;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.navbar li {
-  float: left;
-}
-
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.navbar li a:hover {
-  background-color: #575757;
-  transform: scale(1.1);
-}
-
-.HappyMind {
-  color: white;
-  padding-right: 500px;
-  font-size: 30px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 .header {
   background: url('images/banner2.jpg') no-repeat center center/cover;
@@ -95,7 +51,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Adjust carousel for smaller screens */
 .carousel-container {
   width: 90%;
   margin: 50px auto;
@@ -155,7 +110,7 @@ body {
   background-color: #333;
 }
 
-/* Dots for carousel navigation */
+
 .carousel-dots {
   text-align: center;
   margin-top: 15px;
@@ -174,119 +129,8 @@ body {
 .carousel-dots .active {
   background-color: #333;
 }
-
-/* Responsive Styles */
-@media screen and (max-width: 1024px) {
-  .HappyMind {
-    padding-right: 0;
-    font-size: 28px;
-    text-align: center;
-  }
-
-  .navbar li a {
-    padding: 18px;
-    font-size: 16px;
-  }
-
-  .header h1 {
-    font-size: 3.5em;
-  }
-
-  .header p {
-    font-size: 1.4em;
-  }
-
-  .carousel-slide {
-    min-width: 33.33%; /* Show 3 items per row on medium screens */
-  }
-
-  .prev, .next {
-    padding: 14px;
-    font-size: 17px;
-  }
-  .navbar ul {
-    flex-direction: row; /* Stack navbar items */
-}
-
-.navbar li {
-    float: none; /* Remove float for proper stacking */
-}
-
-.navbar li a {
-    padding: 18px; /* Adjust padding for medium screens */
-    font-size: 16px; /* Slightly reduce font size */
-}
-}
-
-@media screen and (max-width: 768px) {
-  .HappyMind {
-    padding-right: 0;
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .navbar li a {
-    padding: 15px;
-    font-size: 14px;
-  }
-
-  .header h1 {
-    font-size: 3em;
-  }
-
-  .header p {
-    font-size: 1.2em;
-  }
-
-  .carousel-slide {
-    min-width: 50%; 
-  }
-
-  .prev, .next {
-    padding: 12px;
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .HappyMind {
-    font-size: 20px;
-    margin: 0%;
-  }
-
-  .navbar ul {
-    flex-direction: row;
-  }
-
-  .navbar {
-    padding: 9px;
-  }
-
-  .navbar li a {
-    padding: 3px 7px;
-    font-size: 11px;
-  }
-
-  .header h1 {
-    font-size: 2.5em;
-  }
-
-  .header p {
-    font-size: 1em;
-  }
-
-  .carousel-slide {
-    min-width: 100%; 
-  }
-
-  .prev, .next {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  img {
-    width: 400px;
-    height: 400px;
-    flex-direction: row;
-  }
+.content{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  
 }

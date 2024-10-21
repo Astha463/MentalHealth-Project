@@ -5,21 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mood Journaling</title>
   <link rel="stylesheet" href="journaling.css">
+  <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
+<div id="navbar"></div>
 
-<nav class="navbar">
-    <ul>
-      <li class="HappyMind">HappyMind</li>
-      
-        <li><a href="home.html">Home</a></li>
-        <li><a href="AboutUs.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="journaling.html">Journaling</a></li>
-        <li><a href="tracking.html">Tracking</a></li>
-        <li><a href="index.html">LogOut</a></li>
-    </ul>
-</nav>
+
 <main>
     <section id="journaling-section">
       <h2>Write in Your Journal</h2>
@@ -78,6 +69,11 @@ function displaySavedData() {
     displayContainer.innerHTML += "<p>No journal entries found.</p>";
   }
 }
+fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
 </script>
 
 </body>

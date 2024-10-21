@@ -1,39 +1,3 @@
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mood Mentor Dashboard</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-
-  <header>
-    <h1>Welcome to Mood Mentor</h1>
-  </header>
-
-  <main>
-    <section id="options-section">
-      <h2>Choose an Option</h2>
-      <div class="option">
-        <a href="journal.html">
-          <img class="option-image" src="journal_img.png" alt="Journaling Icon">
-          <p>Journaling</p>
-        </a>
-      </div>
-      <div class="option">
-        <a href="tracking.html">
-          <img class="option-image" src="tracker_img.jpg" alt="Tracking Icon">
-          <p>Tracking</p>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <script src="index.js"></script>
-</body>
-</html>-->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,24 +7,13 @@
     <title>Mental Health Tracker</title>
    
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="navbar.css">
     
 </head>
 <body>
+  <div id="navbar"></div>
   
-  
-    <nav class="navbar">
     
-        <ul>
-          <li class="HappyMind">HappyMind</li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
-           
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="journaling.html">Journaling</a></li>
-            <li><a href="tracking.html">Tracking</a></li>
-            <li><a href="index.html">LogOut</a></li>
-        </ul>
-    </nav>
 
 <header class="header">
   <div class="overlay">
@@ -82,14 +35,17 @@ HappyMind advances the mental health and well-being of all people living in the 
  <h2>HappyMind</h2>
 
 <p>
-HappyMind is the small nonprofit dedicated to the promotion of mental health, well-being, and illness prevention. Our work is informed, designed, and led by the lived experience of those most affected.
+HappyMind is the small nonprofit dedicated to the promotion of mental health, well-being, and illness prevention. <br/>
+Our work is informed, designed, and led by the lived experience of those most affected.<br/>
+Operating nationally and in communities across the country, HappyMind advocates for closing the mental health equity 
+<br/>gap while increasing nationwide awareness and understanding through public education, direct services, tools, and research. <br/>
+Our annual State of Mental Health in Nepal report is among the most widely respected health reports in the nation. <br/>
+The new future of whole person's health, healing, and flourishing.<br/>
 
-Operating nationally and in communities across the country, HappyMind advocates for closing the mental health equity gap while increasing nationwide awareness and understanding through public education, direct services, tools, and research. Our annual State of Mental Health in Nepal report is among the most widely respected health reports in the nation. 
-The new future of whole person health, healing, and flourishing
+At HappyMind, we're not just dreaming of a better future—we're shaping it.<br/>
 
-At HappyMind, we're not just dreaming of a better future—we're shaping it.
-
-HappyMind aims to break free of existing limitations in our thinking and approach. We intend to think beyond short-term constraints, misaligned incentives, and policy-making cycles—and ask ourselves how we would design a person-centered system with a focus on all aspects of health and healing
+HappyMind aims to break free of existing limitations in our thinking and approach. We intend to think beyond short-term constraints, <br/>
+misaligned incentives, and policy-making cycles—and ask ourselves how we would design a person-centered system with a focus on all aspects of health and healing.
 </p>
       </div>
         <div class="media-section">
@@ -103,23 +59,19 @@ HappyMind aims to break free of existing limitations in our thinking and approac
     </div>
 </section>
 
-
-
-<script src="scripts.js"></script>
-<script src="carousel.js"></script>
-   
-
   
         
       </div>
-<!-- Add additional sections or content as needed -->
-<footer class="footer">
-  <div class="social-icons">
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-</div>
-</footer>
+     
+
 </body>
+<script src="scripts.js"></script>
+<script src="carousel.js"></script>
+<script>
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+      });
+</script>
 </html>

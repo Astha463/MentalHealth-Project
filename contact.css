@@ -5,66 +5,18 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.navbar {
-  background-color:#222;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-}
 
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-}
-
-.navbar li {
-  display: inline-block;
-}
-
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 15px;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.navbar li a:hover {
-  background-color: #575757;
-  transform: scale(1.1);
-}
-
-.HappyMind {
-  color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 30px;
-  padding-right: 500px;
-}
-
-/* Header Styles */
 h2 {
   text-align: center;
-  font-size: 2em; /* Default font size */
-  color: #333; /* Change to a visible color */
-  margin-top: 120px; /* Space below navbar */
+  font-size: 2em; 
+  color: #333; 
+  margin-top: 120px; 
 }
 
 /* Form Styles */
 form {
   max-width: 600px;
-  margin: 20px auto; /* Adjusted margin for better visibility */
+  margin: 20px auto; 
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -130,117 +82,3 @@ form button:hover {
   margin-bottom: 50px;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .HappyMind {
-    font-size: 28px; /* Adjusts font size for medium screens */
-    padding-right: 0px; /* Reduces padding */
-  }
-
-  h2 {
-    font-size: 1.9em; /* Slightly smaller font size */
-    margin-top: 110px; /* Adjust margin for h2 */
-    margin-right: 50px;
-  }
-
-  form {
-    /* margin: 60px 20px; Adjust margins for smaller screens */
-    padding: 18px; /* Adjust padding */
-    justify-content: center;
-    margin-right: 160px;
-    
-    
-  }
-
-  form label {
-    font-size: 1.15em; /* Adjust label font size */
-  }
-
-  form button {
-    font-size: 0.95em; /* Adjust button font size */
-  }
-
-  .navbar ul {
-    flex-direction: row; /* Stack navbar items */
-}
-
-.navbar li {
-    float: none; /* Remove float for proper stacking */
-}
-
-.navbar li a {
-    padding: 18px; /* Adjust padding for medium screens */
-    font-size: 16px; /* Slightly reduce font size */
-}
-}
-
-@media (max-width: 768px) {
-  .HappyMind {
-    font-size: 24px; /* Adjusts the font size on smaller screens */
-    padding-right: 15px; /* Reduces padding */
-  }
-
-  h2 {
-    font-size: 1.8em; /* Smaller font size for h2 */
-    /* margin-top: 100px; Adjust margin for h2 */
-    margin-left:100px;
-    
-  }
-
-  form {
-    margin: 50px 20px; /* Adjust margins for smaller screens */
-    padding: 15px; /* Adjust padding */
-  }
-
-  form label {
-    font-size: 1.1em; /* Slightly smaller label font */
-  }
-
-  form button {
-    font-size: 0.9em; /* Smaller button font size */
-  }
-
-  .navbar li a {
-    padding: 8px 10px; /* Adjusts padding for navbar items */
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .HappyMind {
-    font-size: 23px; /* Further reduce font size */
-    padding: 0%;
-  }
-
-  header {
-    padding: 10px; /* Adjust padding on very small screens */
-  }
-
-  h2 {
-    font-size: 1.5em; /* Even smaller font size for h2 */
-    margin-top: 80px; /* Adjust margin for h2 */
-    margin-left: 120px;
-  }
-
-  form {
-    margin: 30px 10px; /* Reduce margins even more */
-  }
-
-  form input,
-  form textarea {
-    font-size: 0.9em; /* Smaller input/textarea font size */
-  }
-
-  form button {
-    font-size: 0.8em; /* Smaller button font size */
-  }
-
-  .navbar li a {
-    padding: 7px; /* Adjusts padding for navbar items */
-    font-size: 11px;
-  }
-
-  .navbar {
-    height: 30px;
-  }
-}

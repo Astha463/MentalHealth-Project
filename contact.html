@@ -5,21 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Mental Health Wellness</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <nav class="navbar">
-    
-        <ul>
-          <li class="HappyMind">HappyMind</li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
-           
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="journaling.html">Journaling</a></li>
-            <li><a href="tracking.html">Tracking</a></li>
-            <li><a href="index.html">LogOut</a></li>
-        </ul>
-    </nav>
+    <div id="navbar"></div>
+   
 
     <main>
         <section class="content">
@@ -38,7 +28,13 @@
             </form>
         </section>
     </main>
-
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
 
     <script src="form.js"></script>
 </body>

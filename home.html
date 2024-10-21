@@ -9,24 +9,13 @@
     <title>Mental Health Tracker</title>
    
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="navbar.css">
     
 </head>
 <body>
+  <div id="navbar"></div>
   
   
-  <nav class="navbar">
-    
-    <ul>
-      <li class="HappyMind">HappyMind</li>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="AboutUs.html">About Us</a></li>
-       
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="journaling.html">Journaling</a></li>
-        <li><a href="tracking.html">Tracking</a></li>
-        <li><a href="index.html">LogOut</a></li>
-    </ul>
-</nav>
 
 <header class="header">
   <div class="overlay">
@@ -72,14 +61,14 @@
     <div class="content">
       
       <div>
-        <h2>OverView of Eating Disorder</h2>
+        <h2>Overview of Eating Disorder</h2>
         <p>
 
-          An eating disorder is a mental health condition where you use the control of food to cope with feelings and other situations.
+          An eating disorder is a mental health condition where you use the control of food to cope with feelings and other situations.<br/>
           
-          Unhealthy eating behaviours may include eating too much or too little or worrying about your weight or body shape.
+          Unhealthy eating behaviours may include eating too much or too little or worrying about your weight or body shape.<br/>
           
-          Anyone can get an eating disorder, but teenagers and young adults are mostly affected.
+          Anyone can get an eating disorder, but teenagers and young adults are mostly affected.<br/>
           
           With treatment, most people can recover from an eating disorder.
         </p>          
@@ -109,19 +98,19 @@
           
         </ul>
         <h3>Treatment for eating disorders</h3>
-       <p> You can recover from an eating disorder, but it may take time and recovery will be different for everyone.<p>
+       <p> 1. You can recover from an eating disorder, but it may take time and recovery will be different for everyone.<p>
 <p>
-        If you're referred to an eating disorder specialist or team of specialists, they'll be responsible for your care.
+        2. If you're referred to an eating disorder specialist or team of specialists, they'll be responsible for your care.
 </p>
-        They should talk to you about the support you might need, such as for other conditions you have, and include this in your treatment plan.
+        3. They should talk to you about the support you might need, such as for other conditions you have, and include this in your treatment plan.
         <p>
-        Your treatment will depend on the type of eating disorder you have, but usually includes a talking therapy.
+       4. Your treatment will depend on the type of eating disorder you have, but usually includes a talking therapy.
         </p>
-        You may also need regular health checks if your eating disorder is having an impact on your physical health.
+        5. You may also need regular health checks if your eating disorder is having an impact on your physical health.
         <p>
-        Your treatment may also involve working through a guided self-help programme if you have bulimia or binge eating disorder.
+        6. Your treatment may also involve working through a guided self-help programme if you have bulimia or binge eating disorder.
         </p>
-        Most people will be offered individual therapy, but those with binge eating disorder may be offered group therapy.
+        7. Most people will be offered individual therapy, but those with binge eating disorder may be offered group therapy.
         <p>
         Read more about the different treatments for:
       </p><ul>
@@ -129,7 +118,7 @@
           <li>bulimia</li>   
            <li>binge eating disorder</li> 
           </ul>
-        Treatment for other specified feeding or eating disorder (OSFED) will depend on the type of eating disorder your symptoms are most like.
+        Treatment for other specified feeding or eating disorder (OSFED) will depend on the type of eating disorder your symptoms are most like.<br/>
         
         For example, if your symptoms are most like anorexia, your treatment will be similar to the treatment for anorexia.
         </p>
@@ -166,6 +155,15 @@
     <a href="#"><i class="fab fa-instagram"></i></a>
     <a href="#"><i class="fab fa-linkedin-in"></i></a>
 </div>
+
 </footer>
+
 </body>
 </html>
+<script>
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+      });
+</script>
