@@ -17,14 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-        const isValidLogin = username === "moodmentor" && password === "moodmentor";
-        if (isValidLogin) {
-            localStorage.setItem('authToken', 'yourAuthToken'); // Store token
-            window.location.href = "home.html"; // Redirect after login
+         const isValidLogin = username === "moodmentor" && password === "moodmentor";
+         if (isValidLogin) {
+             localStorage.setItem('authToken', 'yourAuthToken'); // Store token
+             window.location.href = "home.html"; // Redirect after login
         } else {
-            alert("Invalid credentials. Please try again.");
-        }
-    });
+          alert("Invalid credentials. Please try again.");
+       }
+     });
+   ;
 
     // Logout functionality
     if (logoutBtn) {

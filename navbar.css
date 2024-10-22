@@ -4,10 +4,11 @@ header {
     color: #fff;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position:sticky;
     top: 0;
-    z-index: 1000; /* Ensures it stays above other content */
+    z-index: 1000; 
     width: 100%;
+    
 }
 
 /* Navbar items */
@@ -18,7 +19,11 @@ header {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-weight: bolder;
 }
-
+nav {
+    position: sticky;
+    top: 0; 
+    background-color: inherit; /
+}
 /* Styling the navbar */
 nav ul {
     list-style: none;
