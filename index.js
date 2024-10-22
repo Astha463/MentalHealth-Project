@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Login form submission
     loginForm.addEventListener("submit", function (event) {
         event.preventDefault();
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
+        const username = document.getElementById("username").value="moodmentor";
+        const password = document.getElementById("password").value="moodmentor";
 
          const isValidLogin = username === "moodmentor" && password === "moodmentor";
          if (isValidLogin) {
